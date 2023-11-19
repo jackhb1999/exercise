@@ -169,7 +169,7 @@ mod tests {
             body: Some("xxxx".into()),
         };
         let http_string: String = response_expected.into();
-        let actual_string = "HTTP/1.1 404 NOT Found\r\nContent-Type:text/html\r\nContent-Length: 4\r\n\r\nxxxx";
+        let actual_string = "HTTP/1.1 404 Not Found\r\nContent-Type:text/html\r\nContent-Length: 4\r\n\r\nxxxx";
         assert_eq!(http_string, actual_string);
     }
 }

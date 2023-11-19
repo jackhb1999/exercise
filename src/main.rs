@@ -93,4 +93,10 @@ fn main() {
     let y: i16 = 1000;
 
     println!("{x} * {y} = {}", multiply(x as i16, y));
+
+    let example_closure = |x| return x;
+
+    let s0 = String::from("Hello");
+    let s1 = example_closure(&s0);
+
 }
